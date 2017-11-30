@@ -1,0 +1,67 @@
+#partnerbg{
+   background-image: url(../images/partner-header.jpg);
+    background-size: cover;
+    padding: 40px 0px;
+     background-position: 50% -57px;
+}
+#partnersection{
+    .pinksubmit{
+      &:hover{
+      opacity: 0.9;
+        }
+    color:$white;
+     border-radius: 3px;
+    border-bottom: 3px solid rgba(0,0,0,0.15);
+    background-color: #ed1c5b !important;
+    margin-left: 15px;
+     transition: all .2s ease-in-out;
+     border: none;
+     padding: 0 22px;
+    font-size: 14px;
+    height: 40px;
+   font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    }
+    .myinput{
+     padding: 12px 14px !important;
+     border-radius: 0 !important;
+     border: 2px solid #DDD;
+     height: auto!important;
+    }
+    label{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: 10px;
+    cursor: pointer;
+    }
+    .partnership{
+    h3{
+     background-color:$white;
+     display: inline-block;
+     margin-bottom: 0;
+     padding: 0 15px;
+    }
+     margin-bottom: 30px;
+     background: url(../images/dotted.png) repeat-x center;
+    }
+    .pinkspan{
+    color: #ed1c5b;
+    }
+}
+@media only screen and (max-width: 998px){
+.partnerBg{
+top:-40px;
+}
+}
+@media only screen and (max-width: 414px){
+    .crumb{
+        display: none;
+    }
+}

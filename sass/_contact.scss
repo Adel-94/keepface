@@ -1,0 +1,277 @@
+
+
+ #page-menu{
+
+     .dotsmenu{
+   position: fixed;
+    z-index: 99;
+    top: 30%;
+    left: auto;
+    right: 134px;
+    width: 24px;
+    height: auto;
+    line-height: 1.5;
+    background-color: transparent;
+    text-shadow: none;
+    margin-top: -64.5px;
+     }
+ul {
+ .current a{
+        background-color: #ed1c5b;
+    }
+li{
+a{
+    &:hover{
+        background-color: rgba(0,0,0,0.7);
+        div{
+            opacity: 1;
+        }
+    }
+    div{
+     position: absolute;
+    width: auto;
+    top: -11px;
+    right: 25px;
+    background-color: #ed1c5b;
+    color: #FFF;
+    padding: 5px 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    border-radius: 2px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    }
+ transition: all .2s ease-in-out;
+     position: relative;
+    width: 10px;
+    height: 10px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0 2px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    color: #777;
+    display: block;
+    font-size: 14px;
+}
+    float: none;
+            width: 14px;
+            height: 14px;
+            margin: 10px 6px;
+    list-style: none;
+}
+}
+
+} 
+
+
+#contactbg{
+     animation-duration: 1.5s;
+    opacity: 1;
+    margin-bottom: -110px;
+}
+
+
+#cityslider{
+    // top: -100px;
+    // margin-bottom: -100px;
+
+.slider-caption-center{
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    h2{
+      color: #EEE;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+      font-size: 64px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 30px;
+    }
+    p{
+     margin-bottom: 10px;
+    font-size: 24px;
+    display: block;
+     color: #EEE;
+    }
+}
+ #section-dubai{
+    background: url("../images/dubai.jpg") center bottom / cover no-repeat;
+//    background-image: url("../images/dubai.jpg");
+//     background-size:   cover;
+//     background-repeat:  no-repeat;
+    padding: 200px 0px;
+    background-attachment: fixed;  
+    
+    }
+#section-baku{
+    background-image: url("../images/baku.jpg");
+    background-size:   cover;
+    background-repeat:  no-repeat;
+    padding: 150px 0px;
+    background-attachment: fixed;
+    height: 600px;
+}
+#section-tbilisi{
+     background: url("../images/tbilisi.jpg");
+     background-size:   cover;
+    background-repeat:  no-repeat;
+    padding: 150px 0px;
+     background-attachment: fixed;
+   height: 600px;
+}
+#section-almaty{
+     background: url("../images/almaty.jpg");
+     background-size:   cover;
+    background-repeat:  no-repeat;
+    padding: 150px 0px;
+     background-attachment: fixed;
+    height: 600px;
+}
+#section-dushanbe{
+     background: url("../images/dushanbe.jpg");
+     background-size:   cover;
+    background-repeat:  no-repeat;
+    padding: 150px 0px;
+     background-attachment: fixed;
+    height: 600px;
+}
+}
+#page-submenu-cities{
+    //  top: 0;
+    // margin-top: 0;
+    // left: auto;
+    right: 15px;
+    // width: 40px;
+    height: 44px;
+     float: right;
+    line-height: 44px;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    font-size: 14px;
+    // text-align: center;
+     transition: opacity .3s ease;
+}
+
+@media only screen and (max-width:1024px){
+ #contactbg{
+  margin-bottom: -210px;
+    }
+}
+@media only screen and (max-width:991px){
+    #page-menu{
+     position: relative !important;
+    height: 44px !important;
+    line-height: 44px !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1) !important;
+    margin-top: 0px;
+    width: 100%;
+    right: 0px;
+    }
+    #page-menu-wrap{
+    position: relative !important;
+    top: 0 !important;
+    z-index: 99;
+    background-color: #ed1c5b;
+    height: 44px;
+    line-height: 44px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    }
+// #page-menu.dotsmenu nav{
+//     display: none;
+// }
+#page-menu nav{
+     .current a{
+   background-color: transparent!important;
+  }
+    li{
+  &:hover {
+    a{
+            background-color: rgba(0,0,0,0.15);
+    }
+    }
+  float: none;
+    a{
+   div{
+       position: relative;
+       opacity: 1;
+       background-color: transparent!important;
+   }
+    padding: 0 15px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    border-radius: 0;
+    color: #FFF;
+    font-size: 14px;
+    display: block;
+    background:none;
+    }
+    }
+     position: absolute;
+    float: none;
+    width: 200px;
+    top: 43px;
+    left: auto;
+    right: 15px;
+    height: auto;
+    background-color: #1ABC9C;
+    z-index: 11;
+    display: none;
+}
+#page-submenu-cities {
+    opacity: 1;
+    pointer-events: auto;
+    color: #FFF;
+}
+.menu-name{
+    span{
+    font-weight: 600;
+    }
+    float: left;
+    color: #FFF;
+    font-size: 20px;
+}
+}
+@media only screen and (min-width:992px){
+    .menu-name{
+        display: none;
+    }
+   #page-menu, #page-menu-wrap{
+    position: fixed;
+    box-shadow: none;
+    z-index: 99;
+    top: 50%;
+    left: auto;
+
+    width: 24px;
+    height: auto;
+    line-height: 1.5;
+    background-color: transparent;
+    text-shadow: none;
+}
+
+}
+@media only screen and (min-width:992px) and(max-width:1024px){
+    #page-menu-wrap{
+        top:16%;
+    }
+}
+@media only screen and (max-width:414px){
+   #cityslider .slider-caption-center{
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+    }
+}

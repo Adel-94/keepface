@@ -1,0 +1,106 @@
+#career{
+ .star{
+         &:after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    top: 8px;
+    left: 30px;
+    height: 0;
+    border-top: 1px solid #EEE;
+    }
+     position: relative;
+    overflow: hidden;
+    margin: 35px 0;
+    color: #E5E5E5;
+    width: 100%;
+i{
+
+      position: relative;
+    width: 18px;
+    height: 18px;
+    line-height: 1;
+    font-size: 18px !important;
+    text-align: center;
+}
+    }
+.darkbutton{
+    &:hover{
+      opacity: 0.9;
+    }
+      background-color: #111 !important;
+     transition: all .2s ease-in-out;
+     color: $white;
+    border: 3px solid rgba(0,0,0,0.15)!important;
+    margin-left: 0;
+}
+
+  .blueitem {
+ 
+  margin-bottom: -20px;
+}
+.secbody {
+    
+     padding-left: 7px;
+    padding-bottom: 20px;
+    display: none;
+    ul {
+    li{
+        margin-bottom: 7px;
+        list-style: none;
+    i{
+       margin-right: 5px;
+       color: #1ABC9C;
+    }
+    }
+    }
+
+}
+
+.sechead {
+    
+    background-color: #EEE;
+  &:hover {
+      cursor:pointer;
+  }
+h5 {
+   color:#444;
+  font-style: inherit;
+  font-weight: 600; 
+  padding: 13px;
+}
+i {
+   color:#444;
+   padding: 13px 0px;
+  font-size:18px;
+  float: left;
+  margin-right: 18px;
+  margin-left: 15px;
+}
+}
+
+
+
+
+ .career-padding{
+     padding-left: 53px;
+     padding-right: 53px;
+ }
+ .prod-manager{
+      h3{
+    display: block;
+    background: transparent;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #ed1c5b;
+    }
+    p{
+     line-height: 1.8;
+     font-size: 15px;
+    }
+}
+}
+@media only screen and (max-width: 998px){
+.careerBg{
+ top: -40px;
+}
+}

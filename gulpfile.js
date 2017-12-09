@@ -20,10 +20,10 @@ gulp.src([
 .pipe(gulp.dest('./css'));
 });
 
-gulp.task('scripts',function(){
+  gulp.task('scripts',function(){
   gulp.src([
         './js/jquery-3.2.1.min.js',
-        './js/bootstrap.js',
+        './js/bootstrap.min.js',
         './js/grt-youtube-popup.js',
         './js/main.js',
         './js/morphext.min.js',

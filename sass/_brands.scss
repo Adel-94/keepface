@@ -6,12 +6,16 @@
     // background-attachment: fixed;
     overflow: hidden
 }
+
+.advert-newhr{
+    width: 93%;
+}
 .brandsheader  {
     margin-left: 30px;
     padding-bottom: 22px;
     h2{
     text-align: center;
-     color: #EEE;
+    color: #EEE;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
     font-size: 65px;
     letter-spacing: 2px;
@@ -53,24 +57,53 @@
     text-transform: none;
     }
     }
-    .brandicon{
-        &:hover {
-    i{
-     background-color: #333;
-    color: #FFF;
+    .brandprofile{
+   &:hover {
+  .brandicon  i{
+    background-color: #333;
+    color: $white;
     transition: background-color 0.3s, color 0.3s;
-
+  &:after{
+     transform: scale(1);
+     opacity: 1;
+  }
             }
         }
-         margin-left: 80px;
-        margin-bottom: 30px;
+    }
+
+  
+    .brandicon{
+
+    margin-left: 80px;
+    margin-bottom: 30px;
     i{
-     padding: 30px 30px;
+     padding: 27px 25px;
     text-align: center;
     font-size: 42px;
      background-color: #F5F5F5;
     color: #444;
     border-radius: 50%;
+    border:1px solid  #F5F5F5;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &:after{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+    top: -3px;
+    left: -3px;
+    padding: 3px;
+    box-shadow: 0 0 0 2px #333;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: scale(.8);
+    opacity: 0;
+    }
     }
      width: 96px;
     height: 96px;
@@ -83,7 +116,7 @@
 .brandmanagment{
     a{
     &:hover {
-         color: #FFF;
+         color: $white;
            background-color: #444;
         }
        
@@ -133,7 +166,7 @@
    transition: all .2s ease-in-out;
     display: inline-block;
      padding: 10px 26px;
-    font-size: 15px;
+    font-size: 16px;
     height: 46px;
     border: 2px solid #444;
     background-color: transparent;
@@ -142,7 +175,8 @@
      border-radius: 3px;
      text-transform: uppercase;
     letter-spacing: 1px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    // text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-shadow: none;
 }
 
 #tabsection{
@@ -168,14 +202,14 @@ p{
     }
 .tab-levels{
    li.act{
-       background-color: #ed1c5b !important;
-       color: #FFF !important;
+       background-color: $darkpink !important;
+       color: $white !important;
         .level{
        color:$white !important;
         }
     
     font-weight: 600;
-    background-color: #ed1c5b !important;
+    background-color: $darkpink !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     }
     
@@ -231,7 +265,7 @@ li{
 
 #client-slider{
     padding: 20px;
-    background-color: #FFF;
+    background-color: $white;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
@@ -278,22 +312,23 @@ li{
 }
 
 
-
-
-
  .owl-theme .owl-dots{
-        text-align: right!important;
+    text-align: right!important;
+}
+    .owl-theme .owl-dots .owl-dot{
+        margin-right: -6px;
     }
     .owl-theme .owl-dots .owl-dot span{
      width: 6px !important;
     height: 6px !important;
     border: none;
+     background-color: #f68ead!important;
     }
     .owl-theme .owl-dots .owl-dot.active span{
     width: 6px !important;
     height: 6px !important;
     border: none;
-    background-color: #ed1c5b!important;
+    background-color: $darkpink!important;
     
     }
     .advert-hr{
@@ -303,7 +338,7 @@ li{
      padding: 20px 70px;
     }
     .imagecol{
-         padding: 20px 20px;
+     padding: 20px 20px;
         //width: 20%;
       &:nth-child(-n+5)::after {
      position: absolute;
@@ -328,20 +363,16 @@ li{
     }
 }
 
-
-
-
-
 #lastbrandsection{
     .pinkbutton{
-  border-color:  #ed1c5b !important;
-  background-color: #ed1c5b !important;
+  border-color:  $darkpink !important;
+  background-color: $darkpink !important;
    color: $white;
     }
     .largebtn{
         &:hover{
-    border-color:  #ed1c5b !important;
-     background-color: #ed1c5b !important;
+    border-color:  $darkpink !important;
+     background-color: $darkpink !important;
         }
         background-color: #444;
         color: $white;
@@ -353,9 +384,6 @@ li{
         }
     }
 }
-
-
-
 
 // Responsive
 @media only screen and (min-width:415px) and (max-width:767px){

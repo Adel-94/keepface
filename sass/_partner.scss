@@ -12,7 +12,7 @@
     color:$white;
      border-radius: 3px;
     border-bottom: 3px solid rgba(0,0,0,0.15);
-    background-color: #ed1c5b !important;
+    background-color: $darkpink !important;
     margin-left: 15px;
      transition: all .2s ease-in-out;
      border: none;
@@ -52,7 +52,7 @@
      background: url(../images/dotted.png) repeat-x center;
     }
     .pinkspan{
-    color: #ed1c5b;
+    color: $darkpink;
     }
 }
 @media only screen and (max-width: 998px){

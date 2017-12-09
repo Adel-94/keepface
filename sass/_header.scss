@@ -1,14 +1,11 @@
+$darkpink:#ed1c5b;
+$white:#fff;
 $font-stack:'Roboto', sans-serif;
-$white:#FFF;
-
-
-
 a.circle{
   &:hover {
             color: white!important;
-        }
+     }
         text-decoration: none;
-    
     i{
  font-size: 35px;
     }
@@ -38,6 +35,7 @@ li{
         transition: all .5s ease;
         .subnav {
             opacity: 1;
+            visibility: visible;
             transition: all .5s ease;
         }
     }
@@ -46,19 +44,21 @@ li{
         float: left;
         ul.subnav {
             opacity: 0;
+            visibility: hidden;
             position: absolute;
+            z-index: 2;
             width: 220px;
-                box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
+             box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
             border: 1px solid #EEE;
-            border-top: 2px solid #ed1c5b;
+            border-top: 2px solid $darkpink;
             height: auto;
-            z-index: 199;
+           // z-index: 199;
             top: 100%;
             left: 0;
             margin: 0;
             background-color: #333;
             border-color: #3F3F3F;
-            border-top-color: #ed1c5b;
+            border-top-color: $darkpink;
                 transition: all .5s ease;
             li {
             float: none;
@@ -90,7 +90,7 @@ li{
         display: block;
         line-height: 22px;
         padding: 39px 15px;
-        font-size: 16px;
+        font-size: 15px;
         letter-spacing: 1px;
         font-family: $font-stack;
         color:$white;
@@ -100,7 +100,12 @@ li{
     }
 }
 #language {
-    .dropdown-language{
+    .dropdown-language
+    {
+
+        .langpadding:hover{
+            padding-left: 10px;
+        }
     a { 
         display: block;
         width: 14px;
@@ -144,7 +149,7 @@ li{
     }
         margin-top: 38px;
     }
-    background-color: #ed1c5b;
+    background-color: $darkpink;
     i { 
         color: $white;
     }
@@ -210,13 +215,13 @@ li{
     padding: 14px 5px !important;
     border: none !important;
     margin: 0;
-    color: #FFF;
+    color: $white;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
  }
     }
     width: 100%;
     height: auto;
-    background-color: #ed1c5b;
+    background-color: $darkpink;
 }
 @media only screen and (max-width:1090px) {
 
@@ -256,7 +261,7 @@ li{
 }
 .firstheader {
     transition: height .4s ease;
-     background-color: #ed1c5b;
+     background-color: $darkpink;
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .newbg {
@@ -269,9 +274,10 @@ li{
 .dropdown-flags{
 .flagspadding{
     &:hover{
-background-color: black;
+background-color: #2d2b2b;
 transition: all 0.3s;
 cursor:pointer;
+padding-left: 16px;
     }
 a{
     display: inline-flex!important;
@@ -280,9 +286,9 @@ a{
 }
     background-color: #333;
     border-color: #3F3F3F;
-    border-top-color: #ed1c5b;
+    border-top-color: $darkpink;
     box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
-    border-top: 2px solid #ed1c5b;
+    border-top: 2px solid $darkpink;
     height: auto;
     z-index: 199;
     top: 100%;
@@ -298,31 +304,35 @@ a{
     list-style: none;
     left: auto;
     right: 45px;
+    visibility: hidden;
 }
 
 #language li.lang-a ,#newlanguage li.lang-a  {
-    &:hover{
-    .dropdown-language{
+         &:hover{
+      .dropdown-language{
         opacity: 1;
+        visibility: visible;
         transition: all 0.3s;
-    }
- } 
+         }
+     }
+
 }
 
 #language li.flag-a ,#newlanguage li.flag-a  {
-    &:hover{
-    .dropdown-flags{
+     &:hover{
+         .dropdown-flags{
+        visibility: visible;
         opacity: 1;
-        transition: all 0.3s;
-    }
- } 
+       transition: all 0.3s;
+         }
+     }
 }
 .flag-a a, .lang-a a{
-    font-size: 14px;
     letter-spacing: 1px;
     line-height: 22px;
-    color: #FFF;
+    color: $white;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    font-size: 15px;
 }
 
 @media only screen and (max-width:768px){

@@ -8,6 +8,9 @@
 @import 'partner';
 @import 'contact';
 
+$darkpink:#ed1c5b;
+$white:#fff;
+
 //preloader start
 .revealOnScroll {
      opacity: 0;
@@ -17,7 +20,7 @@
   height:100%;  
   position:absolute;
   z-index:999;
-  background-color: #fff;
+  background-color: $white;
 }
 .spinner {
   width: 70px;
@@ -36,7 +39,6 @@
   display: inline-block;
   -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
   animation: bouncedelay 1.4s infinite ease-in-out;
-  /* Prevent first frame from flickering when animation starts */
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -160,7 +162,7 @@ img{
     width: 50px;
     box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
     border: 1px solid #EEE;
-    border-top: 2px solid #ed1c5b;
+    border-top: 2px solid $darkpink;
     height: auto;
     z-index: 199;
     top: 100%;
@@ -168,7 +170,7 @@ img{
     margin: 0;
     background-color: #333;
     border-color: #3F3F3F;
-    border-top-color: #ed1c5b;
+    border-top-color: $darkpink;
     transition: all .5s ease;
 }
     //home
@@ -220,7 +222,7 @@ img{
     bottom: -78px;
     border-bottom: 0;
     left: 0;
-    background-color: #FFF;
+    background-color: $white;
     span{
    display: block;
     margin-top: 3px;
@@ -244,7 +246,7 @@ img{
     .portfolio-overlay {
     a{
     &:hover{
-    color: #ed1c5b;
+    color: $darkpink;
     background-color: #EEE;
     }
     i{
@@ -288,7 +290,7 @@ img{
     }
     span{
     background-color: transparent;
-    border: 1px solid #FFF;
+    border: 1px solid $white;
     }
     }
     .owl-dot.active{
@@ -365,7 +367,7 @@ img{
     }
     span{
     background-color: transparent;
-    border: 1px solid #FFF;
+    border: 1px solid $white;
     }
     }
     .owl-dot.active{
@@ -395,7 +397,7 @@ img{
     &:hover{
    i{
     left: auto;
-    right: 45px;
+    right: 3px;
     transition: all 0.3s ease;
     }
   span {
@@ -404,11 +406,11 @@ img{
     color: $white;
        }
     background-color: #444;
-    color: #FFF;
+    color: $white;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     }
-    background-color: #ed1c5b;
-    color: #FFF;
+    background-color: $darkpink;
+    color: $white;
     font-weight: 600;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
@@ -416,6 +418,7 @@ img{
     display: inline-block;
 }
 .x-large{
+    position: absolute;
     margin-top: 50px;
     padding: 0 40px;
     overflow: hidden;
@@ -424,17 +427,17 @@ img{
     height: 52px;
     line-height: 52px;
 i{  
-        border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
     display: block;
     position: absolute;
-    top: 50px;
-     width: 44px;
+    top: 0px;
+    width: 44px;
     height: 52px;
     line-height: 52px;
-     margin: 0;
+    margin: 0;
     text-align: center;
-    background-color: rgba(0,0,0,0.1);
-    right: 0px;
+    background-color: rgba(0,0,0,.1);
+    right: -44px;
     left: auto;
 }
     span{
@@ -458,11 +461,11 @@ i{
 .dropdown-language{
     background-color: #333;
     border-color: #3F3F3F;
-    border-top-color: #ed1c5b;
+    border-top-color: $darkpink;
     box-shadow: 0px 13px 42px 11px rgba(0, 0, 0, 0.05);
-    border-top: 2px solid #ed1c5b;
+    border-top: 2px solid $darkpink;
     height: auto;
-    z-index: 199;
+    //z-index: 199;
     top: 100%;
     width: 220px;
     position:absolute;
@@ -476,9 +479,10 @@ i{
     list-style: none;
     left: 40px;
     right: 0;
+    visibility: hidden;
 li{
         &:hover{
-        background-color: black;
+        background-color: #2d2b2b;
         transition: all 0.3s;
         cursor:pointer;
     }
@@ -514,7 +518,7 @@ a{
     margin: 0 auto;
         }
         img{
-            max-height: 304px;
+            max-height: 430px;
         }
     }
 }
@@ -566,3 +570,27 @@ a{
  }
 }
 
+.secondowlslider{
+    .owl-next{
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px !important;
+    color: #e1e1e1 !important;
+    background: none!important;
+    color: #555555!important;
+    font-size: 45px!important;
+    }
+    .owl-prev{
+    left: 0;
+     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px !important;
+    color: #e1e1e1 !important;
+    background: none!important;
+     color: #555555!important;
+     font-size: 45px!important;
+    }
+}

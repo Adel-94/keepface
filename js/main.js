@@ -120,21 +120,13 @@ $(document).ready(function () {
     });
 
     $("#js-rotating").Morphext({
-        // The [in] animation type. Refer to Animate.css for a list of available animations.
         animation: "flipInX",
-        // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
         separator: ",",
-        // The delay between the changing of each phrase in milliseconds.
         speed: 2000,
         complete: function () {
-            // Called after the entrance animation is executed.
+            
         }
     });
-
-
-
-
-
 
 
     $(".tab-brand .tab-levels li").click(function () {
@@ -166,7 +158,7 @@ $(document).ready(function () {
                 });
                 $('#logo img').css("width", "75%").css('margin-top', '-15px');
                 $('#header-nav ul li a').css({
-                    "font-size": "13px",
+                    // "font-size": "15px",
                     "padding": "20px 4px"
                 });
                 $('#header-nav').css("margin-left", "-68px");
@@ -185,7 +177,7 @@ $(document).ready(function () {
                 });
                 $('#logo img').css("width", "75%");
                 $('#header-nav ul li a').css({
-                    "font-size": "13px",
+                    // "font-size": "15px",
                     "padding": "20px 4px"
                 });
                 $('#header-nav').css("margin-left", "-68px");
@@ -199,7 +191,7 @@ $(document).ready(function () {
             });
             $('#logo img').css("width", "auto").css('margin-top', '0px');
             $('#header-nav ul li a').css({
-                "font-size": "16px",
+                "font-size": "15px",
                 "padding": "39px 5px"
             });
             $('#header-nav').css("margin-left", "0");
@@ -228,10 +220,13 @@ $(document).ready(function () {
         $('.secondowlslider .owl-carousel').owlCarousel({
             loop: true,
             autoplay: true,
+            nav: true,
             items: 1,
              responsiveClass:true
             // Navigation
         });
+        $('.owl-prev').html('<i class="fa fa-chevron-left" aria-hidden="true"></i>');
+         $('.owl-next').html('<i class="fa fa-chevron-right" aria-hidden="true"></i>')
  
         $("#home-clients .owl-carousel").owlCarousel({
             items: 6,
